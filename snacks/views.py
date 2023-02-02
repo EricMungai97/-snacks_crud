@@ -29,4 +29,5 @@ class SnackUpdateView(UpdateView):
 class SnackDeleteView(DeleteView):
     template_name = 'snack_delete.html'
     model = Snack
+    # to specify where the user should be redirected after successfully submitting a form.
     success_url = reverse_lazy('snack_list')
